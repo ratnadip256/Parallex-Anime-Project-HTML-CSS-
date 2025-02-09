@@ -1,0 +1,120 @@
+@font-face {
+  font-family: myfont;
+  src: url(gaming.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#wrapper {
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 10px;
+  background-color: black;
+}
+.container {
+  position: relative;
+  height: 100%;
+  flex-wrap: wrap;
+  /*center JUJUTSU text*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+  transform-style: preserve-3d;
+}
+
+.background {
+  transform: translateZ(-40px) scale(6);
+}
+.foreground {
+  transform: translateZ(-20px) scale(3.6);
+}
+
+.background,
+.foreground {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+
+  min-height: auto;
+  flex-wrap: wrap;
+}
+
+h1 {
+  position: absolute;
+  top: 5rem;
+  font-size: 4.1rem;
+  letter-spacing: 5px;
+  color: white;
+  text-shadow: 5px 5px 10px #010001;
+
+  /*change font style*/
+  font-family: myfont;
+}
+
+/* whole writting area*/
+section {
+  background-color: #161a20;
+  color: white;
+  padding: 5em 0;
+}
+
+.anime {
+  color: white;
+  font-size: 5rem;
+  font-family: myfont;
+  padding: 0 10rem;
+  padding-top: 10px;
+  margin-left: -120px;
+  text-shadow: 5px 5px 10px #191714;
+}
+
+.text {
+  font-size: 1.5rem;
+  padding: 0 10rem;
+  margin: 2rem 0;
+
+  /*gradient color*/
+  margin-left: 10px;
+  background-color: #0b0d10;
+  border-radius: 60px;
+  height: 400px;
+  width: 1495px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 3px 3px 5px #1bffff, -3px -3px 5px #2e3192;
+}
+.text:hover {
+  box-shadow: 3px 3px 5px #d4145a, -3px -3px 5px #fbb03b;
+}
+
+.bg {
+  position: relative;
+  width: 100%;
+  background-attachment: fixed;
+  height: 550px;
+  background-size: cover;
+}
+
+.bg1 {
+  background-image: url(gojo.jpg);
+}
+.bg2 {
+  background-image: url(sukuna.webp);
+}
+.bg3 {
+  background-image: url(yuji-itadori.jpg);
+}
+.bg4 {
+  background-image: url(geto.jpg);
+}
+.bg5 {
+  background-image: url(mahito.jpg);
+}
